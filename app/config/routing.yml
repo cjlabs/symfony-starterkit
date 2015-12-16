@@ -1,3 +1,20 @@
+cjlabs_blog_service:
+    resource: "@CjlabsBlogServiceBundle/Resources/config/routing.xml"
+    prefix:   /
+
+cjlabs_core:
+    resource: "@CjlabsCoreBundle/Resources/config/routing.xml"
+    prefix:   /core
+
+cjlabs_blog:
+    resource: "@CjlabsBlogBundle/Resources/config/routing.xml"
+    prefix:   /blog
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+    
+blog_fosrest:
+    resource: "@CjlabsBlogServiceBundle/Resources/config/routing_fosrest.yml"
+    type:     rest
+    prefix: /blog/api/fos
